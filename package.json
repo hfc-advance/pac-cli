@@ -1,0 +1,25 @@
+{
+  "name": "pac-cli",
+  "version": "1.0.0",
+  "description": "开发sdk以及vue组件的脚手架",
+  "bin": {
+    "pac": "bin/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/13916253446/pac-cli.git"
+  },
+  "keywords": [],
+  "author": "崔海峰",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/13916253446/pac-cli/issues"
+  },
+  "homepage": "https://github.com/13916253446/pac-cli#readme",
+  "devDependencies": {
+    "release-easy": "^1.0.3"
+  }
+}
