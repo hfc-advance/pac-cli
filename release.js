@@ -1,3 +1,3 @@
-const release = require('release')
+const release = require('release-easy')
 
 release()
