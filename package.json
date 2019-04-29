@@ -19,14 +19,20 @@
     "url": "https://github.com/13916253446/pac-cli/issues"
   },
   "homepage": "https://github.com/13916253446/pac-cli#readme",
-  "devDependencies": {
-    "release-easy": "^1.0.3"
-  },
   "dependencies": {
+    "async-git": "^1.5.0",
     "chalk": "^2.4.2",
+    "child_process": "^1.0.2",
     "commander": "^2.20.0",
     "enquirer": "^2.3.0",
     "fs-extra": "^7.0.1",
+    "github-download-parts": "^2.1.0",
+    "jstransformer-handlebars": "^1.1.0",
+    "kopy": "^8.3.1",
+    "lru-cache": "^5.1.1",
+    "ora": "^3.4.0",
+    "release-easy": "^1.1.1",
+    "remote-origin-url": "^2.0.0",
     "validate-npm-package-name": "^3.0.0"
   }
 }

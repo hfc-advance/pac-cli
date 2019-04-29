@@ -2,6 +2,8 @@ const path = require('path')
 const fs = require('fs-extra')
 const validateProjectName = require('validate-npm-package-name')
 const chalk = require('chalk')
+const download = require('./utils/download.js')
+const compile = require('./utils/compile.js')
 const { prompt } = require('enquirer')
 const CWD = process.cwd()
 
@@ -41,6 +43,8 @@ async function create (projectName) {
       await fs.remove(targetDir)
     }
   }
+  await download(name)
+  await compile(targetDir, { projectName })
 }
 
 module.exports = create
