@@ -23,6 +23,18 @@ async function create (projectName) {
     process.exit(1)
   }
 
+  const { npmType } = await prompt([
+    {
+      name: 'npmType',
+      type: 'select',
+      message: `请选择项目类型:`,
+      choices: [
+        { message: 'vue组件', name: 'vue' },
+        { message: 'sdk', name: 'sdk' }
+      ]
+    }
+  ])
+
   const targetDir = path.resolve(CWD, projectName)
   if (!inCurrent && fs.existsSync(targetDir)) {
     const { action } = await prompt([
@@ -43,7 +55,7 @@ async function create (projectName) {
       await fs.remove(targetDir)
     }
   }
-  await download(name)
+  await download(name, npmType)
   await compile(targetDir, { projectName })
 }
 
