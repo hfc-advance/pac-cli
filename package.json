@@ -12,7 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/13916253446/pac-cli.git"
   },
-  "keywords": [],
+  "keywords": ["pac-cli", "pac", "cli", "sdk-cli", "sdk"],
   "author": "崔海峰",
   "license": "ISC",
   "bugs": {
