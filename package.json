@@ -1,6 +1,6 @@
 {
   "name": "pac-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "开发sdk以及vue组件的脚手架",
   "bin": {
     "pac": "bin/index.js"
