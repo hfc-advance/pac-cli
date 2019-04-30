@@ -4,7 +4,7 @@ const validateProjectName = require('validate-npm-package-name')
 const chalk = require('chalk')
 const download = require('./utils/download.js')
 const compile = require('./utils/compile.js')
-const install = require()
+const install = require('./utils/install.js')
 const { prompt } = require('enquirer')
 const CWD = process.cwd()
 
