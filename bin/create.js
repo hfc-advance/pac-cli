@@ -4,6 +4,7 @@ const validateProjectName = require('validate-npm-package-name')
 const chalk = require('chalk')
 const download = require('./utils/download.js')
 const compile = require('./utils/compile.js')
+const install = require()
 const { prompt } = require('enquirer')
 const CWD = process.cwd()
 
@@ -57,6 +58,7 @@ async function create (projectName) {
   }
   await download(name, npmType)
   await compile(targetDir, { projectName })
+  await install(targetDir)
 }
 
 module.exports = create
